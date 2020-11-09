@@ -1,0 +1,42 @@
+<div>
+    <h2>Angular Service</h2>
+    <input type="button" value="Call function without DI" (click)="fun1()"/>
+    {{msg1}}
+    <br/>
+    <input type="button" value="Call function using DI" (click)="fun2()"/>
+    {{msg2}}
+
+    <input type="button" value="Load info" (click)="loadData()"><br>
+    Id is {{this.id}}
+    Name is {{this.name}}
+    Salary is {{this.salary}}
+    <br>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr *ngFor="let emp of employeeDetails">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </table>
+
+
+    <table border="1">
+        <tr>
+            <th>UserId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>completed</th>
+        </tr>
+        <tr *ngFor="let obj of fakeObject">
+                <td>{{obj.id}}</td>
+                <td>{{obj.userId}}</td>
+                <td>{{obj.title}}</td>
+                <td>{{obj.completed}}</td>
+        </tr>
+    </table>
+</div>

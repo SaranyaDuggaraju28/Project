@@ -1,0 +1,39 @@
+<body>
+    <div>
+        <h4>
+            <p>Instructions:</p>
+            <ul>
+                <li>There are total of 10 questions.</li>
+                <li>Each question carries 1 mark.</li>
+                <li>There are no negative marks for the quiz.</li>
+            </ul>
+        </h4>
+        <input type="button" value="Load Quiz"
+        (click)="loadQuiz()"/>
+        <div *ngIf=flag>
+            Question: {{qanda[start].qid}} <br>
+            {{qanda[start].question}} <br>
+            <br>
+            Options: <br>
+            <form [formGroup]="form" (ngSubmit) = "submit()">
+                <input type="radio" name=ans value=1 formControlName="ans" />
+                <span>{{qanda[start].option1}}</span><br>
+                <input type="radio" name=ans value=2 formControlName="ans"/>
+                <span>{{qanda[start].option2}}</span><br>
+                <input type="radio" name=ans value=3 formControlName="ans"/>
+                <span>{{qanda[start].option3}}</span><br>
+                <input type="radio" name=ans value=4 formControlName="ans"/>
+                <span>{{qanda[start].option4}}</span><br>
+            
+            <br>
+            <br>
+            <button class="btn-primary" (click)="prev()" [disabled]="qanda[start].qid<1">Prev</button>
+            <button class="btn-primary" (click)="next()" [disabled]="qanda[start].qid>qanda.length">Next</button>
+            <br>
+            <br>
+            <!-- <button *ngIf="qanda[start].qid > (qanda.length - 1)" class="btn-primary" (click)="submit()">Submit</button> -->
+            <input *ngIf="qanda[start].qid > (qanda.length - 1)" type = "submit" class = "forsubmit" value = "Submit">
+            </form>
+        </div>
+    </div>    
+</body>

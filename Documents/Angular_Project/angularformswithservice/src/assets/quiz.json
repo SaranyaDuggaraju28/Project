@@ -1,0 +1,93 @@
+{"quiz":[
+    {
+        "qid":1,
+        "question":"What is the name of the biggest technology company in South Korea?",
+        "option1":"Apple",
+        "option2":"Samsung",
+        "option3":"Google",
+        "option4":"HP",
+        "answer": 2
+        },	
+    {
+        "qid":2,
+        "question":"How many breathes does human body take daily?",
+        "option1":"10,000 daily",
+        "option2":"50,000 daily",
+        "option3":"40,000 daily",
+        "option4":"20,000 daily",
+        "answer": 4
+          },	
+	{
+        "qid":3,
+        "question":"What is the lifespan of dragonfly?",
+        "option1":"24 hours",
+        "option2":"20 hours",
+        "option3":"2 days",
+        "option4":"10 hours",
+        "answer": 1
+          },	
+	{
+        "qid":4,
+        "question":"How many hearts does Octopus have?",
+        "option1":"One",
+        "option2":"Two",
+        "option3":"Three",
+        "option4":"Four",
+        "answer": 3
+          },
+    {
+        "qid":5,
+        "question":"In what year did the Beatles first go to USA?",
+        "option1":"1950",
+        "option2":"1964",
+        "option3":"1955",
+        "option4":"1963",
+        "answer": 2
+        },
+        {
+            "qid":6,
+            "question":"Name the Country where Taj Mahal is situated?",
+            "option1":"Egypt",
+            "option2":"Iran",
+            "option3":"India",
+            "option4":"Australia",
+            "answer": 3
+            },
+            {
+                "qid":7,
+                "question":"What is the birth year of Buddha?",
+                "option1":"486BC",
+                "option2":"487BC",
+                "option3":"488BC",
+                "option4":"489BC",
+                "answer": 1
+                },
+                {
+                    "qid":8,
+                    "question":"What is the very first episode of GOT called?",
+                    "option1":"The Dragon and the Wolf",
+                    "option2":"Winter is Coming",
+                    "option3":"Ghost",
+                    "option4":"None of the Above",
+                    "answer": 2
+                    },
+
+                    {
+                        "qid":9,
+                        "question":"How old was Michael when he sadly passed away in 2009?",
+                        "option1":"45",
+                        "option2":"47",
+                        "option3":"50",
+                        "option4":"55",
+                        "answer": 3
+                        },
+                        {
+                            "qid":10,
+                            "question":"What is the grid size on a game of Scrabble?",
+                            "option1":"15 x 15",
+                            "option2":"16 x 16",
+                            "option3":"17 x 17",
+                            "option4":"18 x 18",
+                            "answer": 1
+                            }
+]}

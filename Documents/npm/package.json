@@ -1,0 +1,20 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "This is a test project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NPM",
+    "Node"
+  ],
+  "author": "Saranya Duggaraju",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}

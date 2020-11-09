@@ -1,0 +1,84 @@
+<!-- <h2>Data binding</h2>
+
+<h3>Interpolation Binding</h3>
+<h3>{{message}}</h3>
+
+<h3>CustomerAmount: {{custObj.CustomerAmount}}</h3>
+<h3>CustomerName: {{custObj.CustomerName}}</h3>
+<h3>CustomerCode: {{custObj.CustomerCode}}</h3>
+
+
+<h3>One1way Data Binding(Model/Component to view)</h3>
+<p>Customer Code: <input type = "text" name="CustomerCode" [value]="custObj.CustomerCode"></p>
+<p>Customer name: <input type = "text" name="CustomerName" [value]="custObj.CustomerName"></p>
+<p>Customer Amount: <input type = "text" name="CustomerAmount" [value]="custObj.CustomerAmount"></p>
+
+
+<h3>One-way Data Binding(view to Model/Component)</h3>
+<p>Customer Code: <input type = "text" name="CustomerCode" (input)="custObj.CustomerCode=$event.target.value"></p>
+<p>Customer name: <input type = "text" name="CustomerName" (input)="custObj.CustomerName=$event.target.value"></p>
+<p>Customer Amount: <input type = "text" name="CustomerAmount" (input)="custObj.CustomerAmount=$event.target.value"></p>
+
+
+<h3>Two-way Data Binding(view to Model/Component)</h3>
+<p>Customer Code: <input type = "text" name="CustomerCode" [value]="custObj.CustomerCode" (input)="custObj.CustomerCode=$event.target.value"></p>
+<p>Customer name: <input type = "text" name="CustomerName" [value]="custObj.CustomerName" (input)="custObj.CustomerName=$event.target.value"></p>
+<p>Customer Amount: <input type = "text" name="CustomerAmount" [value]="custObj.CustomerAmount"(input)="custObj.CustomerAmount=$event.target.value"></p>
+
+<h3>Two-way Data Binding(view to Model/Component)</h3>
+<p>Customer Code: <input type = "text" name="CustomerCode" [(ngModel)]="custObj.CustomerCode"></p>
+<p>Customer name: <input type = "text" name="CustomerName" [(ngModel)]="custObj.CustomerName"></p>
+<p>Customer Amount: <input type = "text" name="CustomerAmount" [(ngModel)]="custObj.CustomerAmount"></p>
+
+
+<h3>Login Form</h3>
+<p>Username: <input type="text" name="username" [(ngModel)] = "userObj.username"></p>
+<p>Password: <input type="text" name="password" [(ngModel)] = "userObj.password"></p>
+<button (click)=doLogin()>Login</button> 
+-->
+
+<h3>{{message}}</h3>
+
+
+<ul *ngFor="let project of projects">
+    <li>{{project}}</li>
+</ul> 
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Customer Code</th>
+            <th>Customer name</th>
+            <th>Customer Age</th>
+            <th>Customer Amount</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let cust of customerList; let i=index">
+            <!-- <tr *ngIf="cust.custAge > 30"> -->
+            <td>{{i+1}}</td>
+            <td>{{cust.custCode}}</td>
+            <td>{{cust.custName}}</td>
+            <td>{{cust.custAge}}</td>
+            <td>{{cust.custAmount}}</td>
+        </tr>
+    </tbody>
+</table>   
+
+<p *ngIf="loggedIn">
+    You are successfully logged in.
+</p>
+<p *ngIf="!loggedIn">
+    You are not successfully logged in.
+</p> 
+
+ <p *ngIf="loggedIn; then blockOne else blockTwo">
+    You are successfully logged in.
+</p>
+<ng-template #blockOne>
+    You are successfully logged in.
+</ng-template>
+<ng-template #blockTwo>
+    Something from block two
+</ng-template>
