@@ -1,0 +1,23 @@
+<h3>Drama Books List</h3>
+<table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Photo</th>
+        <th>Buy</th>
+    </tr>
+    <tr *ngFor="let drama of dramas">
+        <td>{{drama.id}}</td>
+        <td>{{drama.name}}</td>
+        <td>{{drama.price}}</td>
+        <td>
+            <img src="assets/images/{{drama.photo}}" width="250" height="100">
+        </td>
+        <td>
+            <a [routerLink]="['/cart-drama', { id:drama.id }]">Buy Now</a>
+        </td>
+    </tr>
+</table>
+
+
